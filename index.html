@@ -205,7 +205,12 @@
 
               <div class="theme-options">
                 <label class="theme-option">
-                  <input type="radio" name="event-theme" value="aniversario" checked/>
+                  <input
+                    type="radio"
+                    name="event-theme"
+                    value="aniversario"
+                    checked
+                  />
 
                   <span class="theme-card">
                     <img src="assets/themes/aniversario.svg" alt="" />
@@ -222,99 +227,136 @@
                   </span>
                 </label>
 
-                 <label class="theme-option">
+                <label class="theme-option">
                   <input type="radio" name="event-theme" value="formatura" />
 
                   <span class="theme-card">
                     <img src="assets/themes/formatura.svg" alt="" />
                     <span>Formatura</span>
                   </span>
-                 </label>
+                </label>
 
-                 <label class="theme-option">
+                <label class="theme-option">
                   <input type="radio" name="event-theme" value="casamento" />
 
                   <span class="theme-card">
                     <img src="assets/themes/casamento.svg" alt="" />
                     <span>Casamento</span>
                   </span>
-                 </label>
+                </label>
 
-                 <label class="theme-option">
+                <label class="theme-option">
                   <input type="radio" name="event-theme" value="cha-de-bebe" />
 
                   <span class="theme-card">
                     <img src="assets/themes/cha-de-bebe.svg" alt="" />
                     <span>Chá de bebê</span>
                   </span>
-                 </label>
+                </label>
 
-                 <label class="theme-option">
-                  <input type="radio" name="event-theme" value="cha-de-panela" />
+                <label class="theme-option">
+                  <input
+                    type="radio"
+                    name="event-theme"
+                    value="cha-de-panela"
+                  />
 
                   <span class="theme-card">
                     <img src="assets/themes/cha-de-panela.svg" alt="" />
                     <span>Chá de panela</span>
                   </span>
-                 </label>
+                </label>
 
-                 
-                 <label class="theme-option">
+                <label class="theme-option">
                   <input type="radio" name="event-theme" value="carnaval" />
 
                   <span class="theme-card">
                     <img src="assets/themes/carnaval.svg" alt="" />
                     <span>Carnaval</span>
                   </span>
-                 </label>
+                </label>
 
-                 <label class="theme-option">
+                <label class="theme-option">
                   <input type="radio" name="event-theme" value="pascoa" />
 
                   <span class="theme-card">
                     <img src="assets/themes/pascoa.svg" alt="" />
                     <span>Páscoa</span>
                   </span>
-                 </label>
+                </label>
 
-                 <label class="theme-option">
+                <label class="theme-option">
                   <input type="radio" name="event-theme" value="sao-joao" />
 
                   <span class="theme-card">
                     <img src="assets/themes/sao-joao.svg" alt="" />
                     <span>São João</span>
                   </span>
-                 </label>
+                </label>
 
-                 
-                 <label class="theme-option">
+                <label class="theme-option">
                   <input type="radio" name="event-theme" value="halloween" />
 
                   <span class="theme-card">
                     <img src="assets/themes/halloween.svg" alt="" />
                     <span>Halloween</span>
                   </span>
-                 </label>
+                </label>
 
-                 <label class="theme-option">
+                <label class="theme-option">
                   <input type="radio" name="event-theme" value="natal" />
 
                   <span class="theme-card">
                     <img src="assets/themes/natal.svg" alt="" />
                     <span>Natal</span>
                   </span>
-                 </label>
+                </label>
 
-                 <label class="theme-option">
+                <label class="theme-option">
                   <input type="radio" name="event-theme" value="outros" />
 
                   <span class="theme-card">
                     <img src="assets/themes/outro.svg" alt="" />
                     <span>Outro</span>
                   </span>
-                 </label>
+                </label>
               </div>
             </fieldset>
+
+            <div class="personalization-row">
+              <fieldset class="style-field">
+                <legend>Estilo</legend>
+
+                <label class="style-switch">
+                  <input
+                    type="checkbox"
+                    name="light-style"
+                    value="light"
+                    aria-label="Usar estilo claro"
+                  />
+
+                  <span class="switch-track" aria-hidden="true"></span>
+                  <span class="style-name" aria-hidden="true"></span>
+                </label>
+              </fieldset>
+
+              <div class="input-wrapper cover-field">
+                <label for="cover-image">Foto de capa</label>
+
+                <div class="upload-wrapper">
+                  <label for="cover-image" class="upload-button">
+                    Selecionar
+                  </label>
+
+                  <input
+                    type="file"
+                    id="cover-image"
+                    name="cover-image"
+                    accept="image/*"
+                  />
+                </div>
+              </div>
+            </div>
           </fieldset>
         </form>
       </main>
