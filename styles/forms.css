@@ -425,3 +425,100 @@ input[type="datetime-local"]::-webkit-calendar-picker-indicator {
     border-top: 1px solid var(--input-stroke);
     margin-block: 48px;
 }
+
+.agreements {
+    display: grid;
+    gap: 12px;
+}
+
+.agreement-option {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+
+    font: var(--body-sm);
+    color: var(--text-body);
+    cursor: pointer;
+}
+
+.agreement-option > input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+.agreement-box {
+    display: grid;
+    place-items: center;
+
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+
+    border: 1px solid var(--input-stroke);
+    border-radius: 4px;
+    background-color: var(--input-base);
+}
+
+.agreement-option > input:checked + .agreement-box {
+    border-color: var(--brand-light);
+}
+
+.agreement-option > input:checked + .agreement-box::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+
+    background-color: var(--brand-light);
+    mask: url("../assets/icons/check.svg") center / contain no-repeat;
+}
+
+.agreement-option > input:focus-visible + .agreement-box {
+    outline: 2px solid var(--brand-light);
+    outline-offset: 3px;
+}
+
+.policy-text {
+    color: var(--brand-light);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 48px;
+}
+
+.generate-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    min-height: 48px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+
+    background-color: var(--brand-dark);
+    color: var(--text-heading);
+    font: var(--body-md-semibold);
+    cursor: pointer;
+}
+
+.generate-button > img {
+    width: 20px;
+    height: 20px;
+}
+
+.generate-button:hover {
+    background-color: var(--brand-mid);
+}
+
+.generate-button:focus-visible {
+    outline: 2px solid var(--brand-light);
+    outline-offset: 3px;
+}

@@ -361,30 +361,88 @@
 
           <fieldset class="contact-fields">
             <legend>
-              <img src="assets/icons/contact.svg" alt="" />Dados para contato</legend>
+              <img src="assets/icons/contact.svg" alt="" />Dados para contato
+            </legend>
 
             <div class="input-wrapper">
               <label for="contact-name">Nome</label>
-              <input type="text" id="contact-name" name="full-name" placeholder="Nome completo" autocomplete="name" aria-describedby="name-error" required/>
+              <input
+                type="text"
+                id="contact-name"
+                name="full-name"
+                placeholder="Nome completo"
+                autocomplete="name"
+                aria-describedby="name-error"
+                required
+              />
 
               <small class="field-error" id="name-error">
-                Campo obrigatório</small>
+                Campo obrigatório</small
+              >
             </div>
 
             <div class="form-row">
               <div class="input-wrapper">
                 <label for="contact-email">E-mail</label>
-                <input type="email" id="contact-email" name="email" placeholder="exemplo@email.com" autocomplete="email"/>
+                <input
+                  type="email"
+                  id="contact-email"
+                  name="email"
+                  placeholder="exemplo@email.com"
+                  autocomplete="email"
+                />
               </div>
 
               <div class="input-wrapper">
                 <label for="contact-phone">Telefone</label>
-                <input type="tel" id="contact-phone" name="phone" placeholder="(99) 99999-9999" autocomplete="tel" inputmode="numeric" oninput="this.value = this.value.replace(/\D/g, '')"/>
+                <input
+                  type="tel"
+                  id="contact-phone"
+                  name="phone"
+                  placeholder="(99) 99999-9999"
+                  autocomplete="tel"
+                  inputmode="numeric"
+                  oninput="this.value = this.value.replace(/\D/g, '')"
+                />
               </div>
             </div>
           </fieldset>
 
-          <hr class="form-divider"/>
+          <hr class="form-divider" />
+
+          <div class="agreements">
+            <label class="agreement-option">
+              <input type="checkbox" name="accept-terms" value="yes" required />
+
+              <span class="agreement-box" aria-hidden="true"></span>
+
+              <span>Li e concordo com os <span class="policy-text">Termos e Condições </span>e com a <span class="policy-text">Política de Privacidade</span>
+              </span>
+            </label>
+
+            <label class="agreement-option">
+              <input type="checkbox" name="email-updates" value="yes" />
+
+              <span class="agreement-box" aria-hidden="true"></span>
+
+              <span>Aceito receber atualizações e promoções por e-mail</span>
+            </label>
+
+            <label class="agreement-option">
+              <input type="checkbox" name="sms-updates" value="yes" />
+
+              <span class="agreement-box" aria-hidden="true"></span>
+
+              <span>Aceito receber atualizações e promoções por SMS</span>
+            </label>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="generate-button">
+              <img src="assets/icons/ticket.svg" alt="" />
+              Gerar convite
+            </button>
+          </div>
         </form>
       </main>
     </div>
