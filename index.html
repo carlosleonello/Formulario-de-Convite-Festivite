@@ -27,12 +27,18 @@
         <form>
           <fieldset>
             <legend>
-              <img src="assets/icons/calendar.svg" alt="calendario" />Sobre o evento
+              <img src="assets/icons/calendar.svg" alt="calendario" />Sobre o
+              evento
             </legend>
 
             <div class="input-wrapper">
               <label for="event-title">Título</label>
-              <input type="text" id="event-title" name="title" placeholder="Nome do evento"/>
+              <input
+                type="text"
+                id="event-title"
+                name="title"
+                placeholder="Nome do evento"
+              />
             </div>
 
             <div class="form-row">
@@ -53,7 +59,12 @@
 
                 <div class="type-options">
                   <label class="type-option">
-                    <input type="radio" name="event-type" value="presencial" checked/>
+                    <input
+                      type="radio"
+                      name="event-type"
+                      value="presencial"
+                      checked
+                    />
                     <span>Presencial</span>
                   </label>
 
@@ -66,37 +77,243 @@
 
               <div class="input-wrapper">
                 <label for="event-location">Local</label>
-                <input type="text" id="event-location" name="location" placeholder="Link ou endereço"/>
+                <input
+                  type="text"
+                  id="event-location"
+                  name="location"
+                  placeholder="Link ou endereço"
+                />
               </div>
             </div>
 
             <div class="input-wrapper description-field">
               <label for="event-description">Descrição</label>
-              <textarea id="event-description" name="description" placeholder="Escreva sobre os detalhes do evento"></textarea>
+              <textarea
+                id="event-description"
+                name="description"
+                placeholder="Escreva sobre os detalhes do evento"
+              ></textarea>
             </div>
           </fieldset>
 
           <fieldset class="personalization">
             <legend>
-                <img src="assets/icons/paintbrush-vertical.svg" alt="">Personalização
+              <img
+                src="assets/icons/paintbrush-vertical.svg"
+                alt=""
+              />Personalização
             </legend>
 
             <fieldset class="color-field">
-                <legend>Cor principal</legend>
+              <legend>Cor principal</legend>
 
-                <div class="color-options">
-                    <input type="radio" class="color-option" name="main-color" value="#59B2FF" aria-label="Azul" style="--swatch-color: var(--brand-light)" checked>
-                    <input type="radio" class="color-option" name="main-color" value="#6A59FF" aria-label="Roxo" style="--swatch-color: #6A59FF">
-                    <input type="radio" class="color-option" name="main-color" value="#B259FF" aria-label="Roxo claro" style="--swatch-color: #B259FF">
-                    <input type="radio" class="color-option" name="main-color" value="#FF59F9" aria-label="Fúcsia" style="--swatch-color: #FF59F9">
-                    <input type="radio" class="color-option" name="main-color" value="#FF598B" aria-label="Rosa" style="--swatch-color: #FF598B">
-                    <input type="radio" class="color-option" name="main-color" value="#FF5959" aria-label="Vermelho" style="--swatch-color: var(--danger)">
-                    <input type="radio" class="color-option" name="main-color" value="#FF8B59" aria-label="Laranja" style="--swatch-color: #FF8B59">
-                    <input type="radio" class="color-option" name="main-color" value="#FFCD59" aria-label="Amarelo" style="--swatch-color: #FFCD59">
-                    <input type="radio" class="color-option" name="main-color" value="#E1FF59" aria-label="Lima" style="--swatch-color: #E1FF59">
-                    <input type="radio" class="color-option" name="main-color" value="#59FF91" aria-label="Verde" style="--swatch-color: #59FF91">
-                    <input type="radio" class="color-option" name="main-color" value="#59FFF9" aria-label="Ciano" style="--swatch-color: #59FFF9">
-                </div>
+              <div class="color-options">
+                <input
+                  type="radio"
+                  class="color-option"
+                  name="main-color"
+                  value="#59B2FF"
+                  aria-label="Azul"
+                  style="--swatch-color: var(--brand-light)"
+                  checked
+                />
+                <input
+                  type="radio"
+                  class="color-option"
+                  name="main-color"
+                  value="#6A59FF"
+                  aria-label="Roxo"
+                  style="--swatch-color: #6a59ff"
+                />
+                <input
+                  type="radio"
+                  class="color-option"
+                  name="main-color"
+                  value="#B259FF"
+                  aria-label="Roxo claro"
+                  style="--swatch-color: #b259ff"
+                />
+                <input
+                  type="radio"
+                  class="color-option"
+                  name="main-color"
+                  value="#FF59F9"
+                  aria-label="Fúcsia"
+                  style="--swatch-color: #ff59f9"
+                />
+                <input
+                  type="radio"
+                  class="color-option"
+                  name="main-color"
+                  value="#FF598B"
+                  aria-label="Rosa"
+                  style="--swatch-color: #ff598b"
+                />
+                <input
+                  type="radio"
+                  class="color-option"
+                  name="main-color"
+                  value="#FF5959"
+                  aria-label="Vermelho"
+                  style="--swatch-color: var(--danger)"
+                />
+                <input
+                  type="radio"
+                  class="color-option"
+                  name="main-color"
+                  value="#FF8B59"
+                  aria-label="Laranja"
+                  style="--swatch-color: #ff8b59"
+                />
+                <input
+                  type="radio"
+                  class="color-option"
+                  name="main-color"
+                  value="#FFCD59"
+                  aria-label="Amarelo"
+                  style="--swatch-color: #ffcd59"
+                />
+                <input
+                  type="radio"
+                  class="color-option"
+                  name="main-color"
+                  value="#E1FF59"
+                  aria-label="Lima"
+                  style="--swatch-color: #e1ff59"
+                />
+                <input
+                  type="radio"
+                  class="color-option"
+                  name="main-color"
+                  value="#59FF91"
+                  aria-label="Verde"
+                  style="--swatch-color: #59ff91"
+                />
+                <input
+                  type="radio"
+                  class="color-option"
+                  name="main-color"
+                  value="#59FFF9"
+                  aria-label="Ciano"
+                  style="--swatch-color: #59fff9"
+                />
+              </div>
+            </fieldset>
+
+            <fieldset class="theme-field">
+              <legend>Tema do evento</legend>
+
+              <div class="theme-options">
+                <label class="theme-option">
+                  <input type="radio" name="event-theme" value="aniversario" checked/>
+
+                  <span class="theme-card">
+                    <img src="assets/themes/aniversario.svg" alt="" />
+                    <span>Aniversário</span>
+                  </span>
+                </label>
+
+                <label class="theme-option">
+                  <input type="radio" name="event-theme" value="infantil" />
+
+                  <span class="theme-card">
+                    <img src="assets/themes/infantil.svg" alt="" />
+                    <span>Infantil</span>
+                  </span>
+                </label>
+
+                 <label class="theme-option">
+                  <input type="radio" name="event-theme" value="formatura" />
+
+                  <span class="theme-card">
+                    <img src="assets/themes/formatura.svg" alt="" />
+                    <span>Formatura</span>
+                  </span>
+                 </label>
+
+                 <label class="theme-option">
+                  <input type="radio" name="event-theme" value="casamento" />
+
+                  <span class="theme-card">
+                    <img src="assets/themes/casamento.svg" alt="" />
+                    <span>Casamento</span>
+                  </span>
+                 </label>
+
+                 <label class="theme-option">
+                  <input type="radio" name="event-theme" value="cha-de-bebe" />
+
+                  <span class="theme-card">
+                    <img src="assets/themes/cha-de-bebe.svg" alt="" />
+                    <span>Chá de bebê</span>
+                  </span>
+                 </label>
+
+                 <label class="theme-option">
+                  <input type="radio" name="event-theme" value="cha-de-panela" />
+
+                  <span class="theme-card">
+                    <img src="assets/themes/cha-de-panela.svg" alt="" />
+                    <span>Chá de panela</span>
+                  </span>
+                 </label>
+
+                 
+                 <label class="theme-option">
+                  <input type="radio" name="event-theme" value="carnaval" />
+
+                  <span class="theme-card">
+                    <img src="assets/themes/carnaval.svg" alt="" />
+                    <span>Carnaval</span>
+                  </span>
+                 </label>
+
+                 <label class="theme-option">
+                  <input type="radio" name="event-theme" value="pascoa" />
+
+                  <span class="theme-card">
+                    <img src="assets/themes/pascoa.svg" alt="" />
+                    <span>Páscoa</span>
+                  </span>
+                 </label>
+
+                 <label class="theme-option">
+                  <input type="radio" name="event-theme" value="sao-joao" />
+
+                  <span class="theme-card">
+                    <img src="assets/themes/sao-joao.svg" alt="" />
+                    <span>São João</span>
+                  </span>
+                 </label>
+
+                 
+                 <label class="theme-option">
+                  <input type="radio" name="event-theme" value="halloween" />
+
+                  <span class="theme-card">
+                    <img src="assets/themes/halloween.svg" alt="" />
+                    <span>Halloween</span>
+                  </span>
+                 </label>
+
+                 <label class="theme-option">
+                  <input type="radio" name="event-theme" value="natal" />
+
+                  <span class="theme-card">
+                    <img src="assets/themes/natal.svg" alt="" />
+                    <span>Natal</span>
+                  </span>
+                 </label>
+
+                 <label class="theme-option">
+                  <input type="radio" name="event-theme" value="outros" />
+
+                  <span class="theme-card">
+                    <img src="assets/themes/outro.svg" alt="" />
+                    <span>Outro</span>
+                  </span>
+                 </label>
+              </div>
             </fieldset>
           </fieldset>
         </form>
