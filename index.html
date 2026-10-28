@@ -358,6 +358,33 @@
               </div>
             </div>
           </fieldset>
+
+          <fieldset class="contact-fields">
+            <legend>
+              <img src="assets/icons/contact.svg" alt="" />Dados para contato</legend>
+
+            <div class="input-wrapper">
+              <label for="contact-name">Nome</label>
+              <input type="text" id="contact-name" name="full-name" placeholder="Nome completo" autocomplete="name" aria-describedby="name-error" required/>
+
+              <small class="field-error" id="name-error">
+                Campo obrigatório</small>
+            </div>
+
+            <div class="form-row">
+              <div class="input-wrapper">
+                <label for="contact-email">E-mail</label>
+                <input type="email" id="contact-email" name="email" placeholder="exemplo@email.com" autocomplete="email"/>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="contact-phone">Telefone</label>
+                <input type="tel" id="contact-phone" name="phone" placeholder="(99) 99999-9999" autocomplete="tel" inputmode="numeric" oninput="this.value = this.value.replace(/\D/g, '')"/>
+              </div>
+            </div>
+          </fieldset>
+
+          <hr class="form-divider"/>
         </form>
       </main>
     </div>
