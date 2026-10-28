@@ -41,12 +41,6 @@
     --text-heading: #F9F9F9;
 }
 
-body {
-    overflow: hidden;
-    font: var(--body-md);
-    color: var(--text-body);
-}
-
 .name {
     font: var(--logo);
     color: #FF598B;
@@ -54,7 +48,7 @@ body {
 }
 
 body {
-    overflow: hidden;
+    /* overflow: hidden; */
     font: var(--body-md);
     color: var(--text-body);
     background-color: var(--shape-background);
@@ -80,6 +74,9 @@ aside > img {
 
 .app {
     padding: 20px;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 20px;
 }
 
 .logo {
