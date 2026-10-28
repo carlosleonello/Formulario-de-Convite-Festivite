@@ -166,3 +166,44 @@ input[type="datetime-local"] {
 .type-option input:checked + span::before {
     background-color: var(--brand-light);
 }
+
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+.personalization {
+    margin-top: 48px;
+}
+
+.color-field > legend {
+    font: var(--body-sm);
+    color: var(--text-body);
+    margin-bottom: 16px;
+}
+
+.color-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.color-option {
+    appearance: none;
+    flex-shrink: 0;
+
+    width: 40px;
+    height: 40px;
+    border: 6px solid var(--shape-button);
+    border-radius: 50%;
+    background-color: var(--swatch-color);
+    cursor: pointer;
+}
+
+.color-option:checked {
+    outline: 2px solid var(--brand-light);
+}
+
+.color-option:focus-visible {
+    outline: 2px solid var(--text-heading);
+    outline-offset: 3px;
+}
